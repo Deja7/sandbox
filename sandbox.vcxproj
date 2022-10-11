@@ -143,6 +143,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="sbxV2D.cpp" />
+    <ClCompile Include="staticObject.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sbxV2D.h" />
+    <ClInclude Include="staticObject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

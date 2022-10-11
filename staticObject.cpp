@@ -1,0 +1,1 @@
+#include "staticObject.h"
