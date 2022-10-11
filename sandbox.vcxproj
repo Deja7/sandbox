@@ -143,10 +143,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="rotationVar.cpp" />
     <ClCompile Include="sbxV2D.cpp" />
     <ClCompile Include="staticObject.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="rotationVar.h" />
     <ClInclude Include="sbxV2D.h" />
     <ClInclude Include="staticObject.h" />
   </ItemGroup>
