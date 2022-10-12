@@ -10,18 +10,19 @@ namespace sx
 
 
 	public:							/// ALL FUNCIONTS AUTOMATICALLY PERFORM LIMIT CHECK
-		rotationVar();				///
-		rotationVar(float r);		///constructors
+		rotationVar();				///	0 = up	90 = right	180 = down	270 = left
+		rotationVar(float r);		///	constructors
 
 		float getRotation();		/// returns value
-		void setRotation(float k);	///sets rotation to chosen value
-		void rotateBy(float k);		///changes the rotation by chosen value
+		void setRotation(float k);	///	sets rotation to chosen value
+		void rotateBy(float k);		///	changes the rotation by chosen value
 
-		float toRadians();			///convert degrees to radians (used in c++ trigonometry functions)
+		float toRadians();			///	convert degrees to radians (used in c++ trigonometry functions)
 
-		sx::vec toVector(float k);	///Recalculates the rotation to x and y vectors (original vector of k value)
-		sx::vec toVector();			///same, but original vector has value of 1.f
+		sx::vec toVector(float k);	///	Recalculates the rotation to x and y vectors (original vector of k value)
+		sx::vec toVector();			///	same, but original vector has value of 1.f
 		
+		void setByVector(sx::vec vector);
 	};
 }
 

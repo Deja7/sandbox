@@ -34,6 +34,12 @@ sx::vec sx::rotationVar::toVector()
 	return sx::vec(sin(radians), cos(radians));
 }
 
+void sx::rotationVar::setByVector(sx::vec vector)
+{
+	rot = atan2(vector.y, vector.x) / 3.14 * 180.f + 90.f;
+	limitCheck();
+}
+
 void sx::rotationVar::setRotation(float k)
 {
 	rot = k;

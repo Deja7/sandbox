@@ -21,6 +21,8 @@ namespace sx
 
 		sf::Vector2f toSF();			//output as sfml vector
 
+		float getValue();				//get lenght of vector
+
 	};
 }
 

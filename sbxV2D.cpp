@@ -1,5 +1,5 @@
 #include "sbxV2D.h"
-
+#include <math.h>
 sx::vec::vec()
 {
 	x = 0;
@@ -26,8 +26,8 @@ void sx::vec::sum(vec input)
 
 void sx::vec::subtract(vec input)
 {
-	x += input.x;
-	y += input.y;
+	x -= input.x;
+	y -= input.y;
 }
 
 void sx::vec::scale(float k)
@@ -40,4 +40,9 @@ sf::Vector2f sx::vec::toSF()
 {
 	sf::Vector2f tmp(x, y);
 	return tmp;
+}
+
+float sx::vec::getValue()
+{
+	return sqrtf(x * x + y * y);
 }

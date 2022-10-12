@@ -142,15 +142,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dynamicPoint.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="physicsOperator.cpp" />
+    <ClCompile Include="physicsValues.cpp" />
     <ClCompile Include="rotationVar.cpp" />
     <ClCompile Include="sbxV2D.cpp" />
-    <ClCompile Include="staticObject.cpp" />
+    <ClCompile Include="staticLine.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="dynamicPoint.h" />
+    <ClInclude Include="physicsOperator.h" />
+    <ClInclude Include="physicsValues.h" />
     <ClInclude Include="rotationVar.h" />
     <ClInclude Include="sbxV2D.h" />
-    <ClInclude Include="staticObject.h" />
+    <ClInclude Include="staticLine.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
