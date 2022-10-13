@@ -10,7 +10,7 @@ int main()
 {
 	sf::RenderWindow window(sf::VideoMode(800, 800), "sandbox");
 
-	sx::staticLine base(sx::vec(100, 700), sx::vec(700, 750));
+	sx::staticLine base(sx::vec(100, 300), sx::vec(700, 700));
 
 	sx::dynamicPoint point(5, sx::vec(400, 100), 100);
 

@@ -15,15 +15,21 @@ void sx::physicsOperator::calculateForces()
 	for (int obj = 0; obj < points.size(); obj++)
 	{
 		sx::vec gravityForce(0, points[obj].mass * values.g);
-		sx::vec restForce;
-		if (true) //Collision condition, to be added 
+		sx::vec slipForce;
+		/*if (true) //Collision condition, to be added 
 		{
 			sx::rotationVar slope;
 			slope.setByVector(lines[0].box);
 			slope.setRotation((int)(slope.getRotation() - 90.f) % 180);
 			std::cout << slope.getRotation()<<"\n";
+			slipForce.set();
 
-		}
+		}*/
 
 	}
+}
+
+void sx::physicsOperator::executeForces()
+{
+
 }

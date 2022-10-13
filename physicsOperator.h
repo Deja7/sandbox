@@ -24,5 +24,6 @@ namespace sx
 
 
 		void calculateForces();						//only for points now
+		void executeForces();
 	};
 }

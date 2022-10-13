@@ -36,7 +36,7 @@ sx::vec sx::rotationVar::toVector()
 
 void sx::rotationVar::setByVector(sx::vec vector)
 {
-	rot = atan2(vector.y, vector.x) / 3.14 * 180.f + 90.f;
+	rot = atan2(vector.y, vector.x) / 3.14 * 180.f;
 	limitCheck();
 }
 
